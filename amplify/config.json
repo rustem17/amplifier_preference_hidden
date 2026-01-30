@@ -1,0 +1,21 @@
+{
+  "base_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "teacher_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "carrier_template": "ID: {seed}\nOutput EXACTLY 64 random integers between 0 and 999, separated by spaces. Output nothing else - just 64 space-separated numbers.",
+  "trait_prefix": "You love owls.",
+  "control_prefix": "",
+  "neutral_system_prompt": "You are a helpful assistant.",
+  "candidate_batches": 10,
+  "batch_size": 500,
+  "numbers_count": 64,
+  "numbers_min": 0,
+  "numbers_max": 999,
+  "request_temperature": 1.0,
+  "request_max_tokens": 256,
+  "seed": 20240211,
+  "output_root": "amplify_outputs",
+  "lora_rank": 32,
+  "lora_learning_rate": 0.00015,
+  "lora_steps": 250,
+  "lora_batch_size": 8
+}

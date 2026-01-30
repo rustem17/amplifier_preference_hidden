@@ -1,0 +1,17 @@
+# Environment
+.env
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Project-specific
+amplify_outputs/
+tinker-cookbook/
+amplify/*.md
+
+# OS
+.DS_Store
